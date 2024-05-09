@@ -1,0 +1,94 @@
+.photo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    height: 100vh; /* Set the container height to full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport height */
+}
+  
+  
+  .photo-content {
+    flex: 1;
+    padding-left: 2rem;
+    transition: transform 1s ease; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background: linear-gradient(45deg, #6db0d6, #89df81);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+  }
+  
+  
+  .photo-container.animate .photo-content {
+    transform: translateX(50%); 
+    animation: slideBack 4s ease infinite; 
+  }
+  
+  @keyframes slideBack {
+    0% {
+      transform: translateX(40%); 
+    }
+    100% {
+      transform: translateX(0); /* Settle back to left */
+    }
+  }
+  
+  .photo-container h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .photo-content p {
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2rem;
+  }
+  
+  .dp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem; 
+    margin-bottom: 5rem; 
+    margin-right: -10rem; 
+  }
+  
+  .dp .icon img {
+    width: 200px;
+    height: auto; 
+    border-radius: 10px; /* Apply border radius for rounded corners */
+  }
+  
+  @media (max-width: 1025px) {
+    .photo-container {
+      flex-direction: column; /* Stack elements vertically on small screens */
+    }
+  
+    .photo-content {
+      padding-left: 0; /* Remove left padding on small screens */
+      text-align: center; /* Center text on small screens */
+      margin-top: 2rem; /* Adjust margin-top for space */
+    }
+  
+    .photo-container h2 {
+      font-size: 2.5rem; /* Adjust font size for heading */
+      line-height: 4rem; /* Adjust line height for heading */
+    }
+  
+    .photo-content p {
+      font-size: 1.2rem; /* Adjust font size for paragraph */
+      line-height: 2rem; /* Adjust line height for paragraph */
+    }
+  
+    .dp {
+      margin-right: 0; /* Remove right margin on small screens */
+    }
+  }
+  

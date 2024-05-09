@@ -1,0 +1,103 @@
+.nav-wrapper {
+    background: linear-gradient(45deg, #00cccc, #c05d97);
+    padding: 0.2rem 0;
+    position: fixed; /* Set the navbar to a fixed position */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left edge of the viewport */
+    width: 100%; /* Make it span the entire width of the viewport */
+    z-index: 1000; /* Ensure it appears above other elements */
+    backdrop-filter: blur(10px); /* Apply backdrop filter for a semi-transparent effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+.nav-content {
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem; /* Adjust padding for smaller screens */
+    margin: 0 auto;
+}.logo{
+    width: 12rem;
+    height: auto;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+.nav-content li {
+    margin: 0 1rem;
+}
+.menu-item {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background: linear-gradient(45deg, #0b030e, #1b0230); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.contact-btn {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #29b385;
+    border: none;
+    padding: 0.5rem 1rem; /* Adjust padding to match the size of the previous button */
+    cursor: pointer;
+    border-radius: 0.5rem; /* Add border radius for rounded corners */
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.contact-btn:hover {
+    background-color: #ce3b6c; /* Change background color on hover */
+}
+.menu-btn{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg,#a993fe -0.13%,#7e61e7 99.87%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+.menu-btn:hover{
+    color: #a993fe;
+    background: #000;
+    border: 1px solid #a993fe;
+
+}
+@media(max-width: 505px){
+    .logo{
+        width: 6rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 769px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-content ul{
+        display: none;
+    }
+}
+@media(max-width: 1325px){
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}
