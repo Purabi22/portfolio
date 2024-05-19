@@ -7,7 +7,7 @@ const ProjectCard = ({ details }) => {
             <h6>
                 <a href={details.url} target="_blank" rel="noopener noreferrer">
                     {details.title}
-                </a>
+                </a> 
             </h6>
             <ul>
                 {details.description.map((item) => (
