@@ -12,6 +12,14 @@
     font-weight: 500;
     margin-bottom: 0.7rem;
 }
+.project-card h6 a {
+    color: white;
+    text-decoration: none; /* Optional: remove underline from links */
+}
+
+.project-card h6 a:hover {
+    text-decoration: underline; /* Optional: add underline on hover */
+}
 .project-card ul li {
     list-style: none;
     font-size: 0.8rem;
