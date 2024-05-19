@@ -44,6 +44,7 @@ export const SKILLS=[
 export const PROJECT=[
     {
         title:"BingeBox - an OTT platform",
+        url: "https://purabi22.github.io/Ott_Platform/",
         description:[
             "Built an OTT platform to search for movies and series using a generated TMDb API key",
              "Technologies used include HTML, Tailwind CSS, and JavaScript"
@@ -53,6 +54,7 @@ export const PROJECT=[
     
     {
         title:"Weather App",
+        url: "https://purabi22.github.io/WeatherApp/",
         description:[
             "Crafted a dynamic weather application with HTML, CSS, and JavaScript",
              "It offers real-time weather updates for any location through intuitive search functionality"
@@ -61,7 +63,8 @@ export const PROJECT=[
     },
     
     {
-        title:"BMI Calculator",
+        title:"BMI Calculator",    
+        url: "https://purabi22.github.io/BMI-Calculator/",
         description:[
             "Developed a visually enhanced BMI calculator",
             "It utilizes HTML, CSS, and JavaScript",
@@ -71,6 +74,7 @@ export const PROJECT=[
     },
     {
         title:"ZIGGY- A food delivery website",
+        url: "https://purabi22.github.io/ziggy.purabi.io/",
         description:[
             "It is an online ecommerce website which recommends you online food delivery based on your search.",
             "Features:- Order, Home, Dishes, Menu, Review, Add to cart, Search, etc.",
@@ -81,6 +85,7 @@ export const PROJECT=[
     {
         
         title:"TO-DO list App",
+        url: "https://to-dos-list-mu.vercel.app/",
         description:[
             "Crafted with React and Bootstrap, a To-Do List app which offers intuitive task management",
             "Users can create and  delete tasks with ease ,ensuring efficiency and productivity "
