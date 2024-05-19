@@ -13,15 +13,19 @@
     font-weight: 500;
     margin-bottom: 0.7rem;
 }
+
 .project-card h6 a {
     color: white;
-    text-decoration: none; /* Optional: remove underline from links */
+    text-decoration: none; /* Removes underline from links */
+    cursor: pointer; /* Changes cursor to pointer */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .project-card h6 a:hover {
-    color:white;
-    text-decoration: underline; /* Optional: add underline on hover */
+    color: white;
+    text-decoration: underline; /* Adds underline on hover */
 }
+
 .project-card ul li {
     list-style: none;
     font-size: 0.8rem;
@@ -40,15 +44,15 @@
     left: -1.3rem;
     top: 0.35rem;
 }
-@media(max-width: 768px){
-    .project-card{
+
+@media(max-width: 768px) {
+    .project-card {
         margin: 0;
     }
-    .project-card h6{
+    .project-card h6 {
         font-size: 0.95rem;
     }
-    .project-card ul li{
+    .project-card ul li {
         font-size: 0.75rem;
     }
 }
-
