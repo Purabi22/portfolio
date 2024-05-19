@@ -43,6 +43,15 @@ export const SKILLS=[
 
 export const PROJECT=[
     {
+        title:"BingeBox - an OTT platform",
+        description:[
+            "Built an OTT platform to search for movies and series using a generated TMDb API key",
+             "Technologies used include HTML, Tailwind CSS, and JavaScript"
+
+        ],
+    },
+    
+    {
         title:"Weather App",
         description:[
             "Crafted a dynamic weather application with HTML, CSS, and JavaScript",
