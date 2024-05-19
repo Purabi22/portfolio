@@ -19,23 +19,29 @@
     text-decoration: none; /* Removes underline from links */
     cursor: pointer; /* Changes cursor to pointer */
     animation: lightsOnOff 2s infinite; /* Adds lights on/off animation */
+    display: inline-block; /* Required for scaling to work correctly */
 }
 
 @keyframes lightsOnOff {
     0% {
         color: white;
+        transform: scale(1); /* Initial scale */
     }
     25% {
         color: #ff6347; /* Tomato */
+        transform: scale(1.1); /* Zoom in */
     }
     50% {
         color: #3cb371; /* Medium Sea Green */
+        transform: scale(1); /* Zoom out */
     }
     75% {
         color: #1e90ff; /* Dodger Blue */
+        transform: scale(1.1); /* Zoom in */
     }
     100% {
         color: white;
+        transform: scale(1); /* Reset to initial scale */
     }
 }
 
