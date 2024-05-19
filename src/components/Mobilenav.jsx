@@ -66,7 +66,7 @@ const Mobilenav = ({ isOpen, toggleMenu }) => {
               </ScrollLink>
             </li>
           </ul>
-          <button className="contact-btn" onClick={() => window.open('./images/resume.pdf')}>
+          <button className="contact-btn" onClick={() => window.open('./images/Purabi Mondal.pdf')}>
             My Resume
           </button>
         </div>
