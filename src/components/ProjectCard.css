@@ -18,16 +18,21 @@
     color: white;
     text-decoration: none; /* Removes underline from links */
     cursor: pointer; /* Changes cursor to pointer */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
-    animation: lightsOnOff 1s infinite alternate; /* Adds lights on/off animation */
+    animation: lightsOnOff 2s infinite; /* Adds lights on/off animation */
 }
 
 @keyframes lightsOnOff {
     0% {
         color: white;
     }
+    25% {
+        color: #ff6347; /* Tomato */
+    }
     50% {
-        color: #888;
+        color: #3cb371; /* Medium Sea Green */
+    }
+    75% {
+        color: #1e90ff; /* Dodger Blue */
     }
     100% {
         color: white;
