@@ -19,11 +19,25 @@
     text-decoration: none; /* Removes underline from links */
     cursor: pointer; /* Changes cursor to pointer */
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for hover effects */
+    animation: lightsOnOff 1s infinite alternate; /* Adds lights on/off animation */
+}
+
+@keyframes lightsOnOff {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #888;
+    }
+    100% {
+        color: white;
+    }
 }
 
 .project-card h6 a:hover {
     color: white;
     text-decoration: underline; /* Adds underline on hover */
+    animation: none; /* Stops the lights on/off animation on hover */
 }
 
 .project-card ul li {
