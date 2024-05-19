@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
           </ul>
           {window.innerWidth > 768 && ( // Hide the button on screens smaller than 768px
-          <button className="contact-btn" onClick={() => window.open('./images/resume.pdf')}>
+          <button className="contact-btn" onClick={() => window.open('./images/Purabi Mondal.pdf')}>
           My Resume
           </button>)}  
 
